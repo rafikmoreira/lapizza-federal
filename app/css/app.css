@@ -1,0 +1,120 @@
+:root {
+  --color-1: #f5f5f5;
+  --color-2: #e8e0a6;
+  --color-3: #bd3728;
+}
+
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  background-color: var(--color-2);
+  color: #222;
+}
+
+video {
+  width: 100%;
+}
+
+.video-container {
+  max-height: 550px;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.header-effect {
+  position: relative;
+}
+
+header {
+  background-color: rgba(189, 55, 40, 0.7);
+  padding: 40px 0;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  max-height: 350px;
+}
+
+#top-navbar {
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+#nav-items {
+  list-style: none;
+  font-size: 22px;
+  gap: 10px;
+}
+
+.nav-item a {
+  font-family: "Lobster", cursive;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+}
+
+.nav-item {
+  color: white;
+}
+
+.nav-item a:hover,
+.nav-item.active > a {
+  border-top: var(--color-2) 1px solid;
+  border-bottom: var(--color-2) 1px solid;
+  color: var(--color-2);
+}
+
+a:visited {
+  color: white;
+}
+
+#info {
+  background-color: var(--color-1);
+}
+
+#info ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+#info li {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#sua-receita {
+}
+
+footer {
+  background-image: url(../media/img/bg_sua_receita.png);
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+footer section {
+  width: 100%;
+  background-color: var(--color-1);
+  padding: 5px 0;
+}
