@@ -2,6 +2,8 @@
   --color-1: #f5f5f5;
   --color-2: #e8e0a6;
   --color-3: #bd3728;
+  --color-4: #a5ee80;
+  --shadow: 1px 1px 6px #222;
 }
 
 ul,
@@ -15,6 +17,21 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: "Lobster", cursive;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--color-3);
+}
+
+h3 {
+  font-family: "Lobster", cursive;
+  letter-spacing: 5px;
+  font-size: 20px;
 }
 
 a {
@@ -128,9 +145,23 @@ a:visited {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
-#sua-receita {
+@media (min-width: 760px) {
+  .container {
+    padding: 0;
+  }
+}
+
+#sua-receita #box {
+  background-color: white;
+  padding: 20px;
+  margin: 40px 0;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--color-3);
+  background-color: var(--color-4);
+  border-radius: 3px;
 }
 
 footer {
@@ -144,4 +175,58 @@ footer section {
   width: 100%;
   background-color: var(--color-1);
   padding: 10px 0;
+}
+
+#img-cozinheira {
+  padding: 30px 0;
+}
+
+.ilustracao {
+  max-width: 250px;
+}
+
+.foto-receita img {
+  border-radius: 5px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.box-receita {
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.box-receita h3 {
+  margin: 10px 0;
+}
+
+.box-receita button {
+  border-radius: 5px;
+  background-color: var(--color-3);
+  text-transform: uppercase;
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+  color: var(--color-2);
+  transition: background 0.4s, color 0.4s;
+  cursor: pointer;
+}
+
+.box-receita button:hover {
+  background-color: var(--color-4);
+  color: var(--color-3);
+}
+
+#receita-img img {
+  height: 300px;
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+  margin: 30px 0;
+}
+
+#ingredientes ul {
+  list-style: none;
 }
