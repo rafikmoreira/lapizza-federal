@@ -6,7 +6,13 @@
 
 ul,
 li,
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -42,6 +48,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(../media/img/header_bg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 #logo {
@@ -98,6 +116,15 @@ a:visited {
   gap: 0 10px;
 }
 
+#info a:visited {
+  color: #222;
+}
+
+#info li:hover,
+#info a:hover {
+  color: var(--color-3);
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -116,5 +143,5 @@ footer {
 footer section {
   width: 100%;
   background-color: var(--color-1);
-  padding: 5px 0;
+  padding: 10px 0;
 }
